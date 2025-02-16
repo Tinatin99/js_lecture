@@ -737,6 +737,8 @@
 
     //    ლექცია N 6    (  მე-5 ლექციის დავალება)
 
+    // 03,02,2025 (დავალება)
+
 
 
 
@@ -744,6 +746,12 @@
 // for ციკლით: დაწერეთ კოდი, რომელიც for ციკლის გამოყენებით დაბეჭდავს რიცხვებს 1-დან 10-მდე. 
 // ( არ არის სავალდებულო)while ციკლით: დაწერეთ კოდი, რომელიც while ციკლის გამოყენებით დაბეჭდავს რიცხვებს 1-დან 10-მდე. 
 
+// for(let i = 1; i <=10; i+=2){
+//     console.log(i);    კენტები
+//  }
+//  for(let i = 1; i <=10; i++){
+//     console.log(i);    ყველა რიცხვი
+//  }
 
 //       ლუწი რიცხვების დაბეჭდვა 2-დან 20-მდე:
 // for ციკლით: დაწერეთ კოდი, რომელიც for ციკლის გამოყენებით დაბეჭდავს ლუწ რიცხვებს 2-დან 20-მდე. 
@@ -759,11 +767,11 @@
 
 
 
-//      ( არ არის სავალდებულო) რიცხვების ჯამის გამოთვლა 1-დან 100-მდე: 
+//     1.   ( არ არის სავალდებულო) რიცხვების ჯამის გამოთვლა 1-დან 100-მდე: 
 // for ციკლით: დაწერეთ კოდი, რომელიც for ციკლის გამოყენებით გამოთვლის რიცხვების ჯამს 1-დან 100-მდე. 
 // let sum = 0;
 // for(let i =1; i <= 100; i++){
-    // sum = sum + i    შემოკლებული ვარიანტი
+//     sum = sum + i    შემოკლებული ვარიანტი
 //      sum += i
 // }
 // console.log(sum);
@@ -771,20 +779,16 @@
 // while ციკლით: დაწერეთ კოდი, რომელიც while ციკლის გამოყენებით გამოთვლის რიცხვების ჯამს 1-დან 100-მდე. 
 
 
-//       რიცხვების ამოწერა უკუღმა: 
+//   2.  რიცხვების ამოწერა უკუღმა: 
 // for ციკლით: დაწერეთ კოდი, რომელიც for ციკლის გამოყენებით დაბეჭდავს რიცხვებს 10-დან 1-მდე. 
-// ( არ არის სავალდებულო)while ციკლით: დაწერეთ კოდი, რომელიც while ციკლის გამოყენებით დაბეჭდავს რიცხვებს 10-დან 1-მდე. 
+// // ( არ არის სავალდებულო)while ციკლით: დაწერეთ კოდი, რომელიც while ციკლის გამოყენებით დაბეჭდავს რიცხვებს 10-დან 1-მდე. 
 
-// for(let i = 10; i <=20; i-=1){
+//  for(let i = 10; i <=1; i--){
 //     console.log(i);    
-// }
-// for(let i = 20; i <=20; i-=2){
-//     console.log(i);
-//     // 
-// }
+//  }
 
 
-//   რიცხვის ლუწი ან კენტი შემოწმება: 
+// 3.    რიცხვის ლუწი ან კენტი შემოწმება: 
 // დაწერეთ კოდი, რომელიც იღებს რიცხვს და ამოწმებს, არის თუ არა ის ლუწი თუ კენტი. თუ რიცხვი ლუწია, დაბეჭდეთ "რიცხვი ლუწია", ხოლო თუ კენტია - "რიცხვი კენტია". 
 
 // let array = [2,41,6,88,10,12,13,15,23,25,404,48,656,88,91,97,100,110,111,113,214,218,19];
@@ -808,7 +812,7 @@
 // }
 
 
-//   რიცხვის დადებითი, უარყოფითი ან ნულის შემოწმება: 
+// 4.  რიცხვის დადებითი, უარყოფითი ან ნულის შემოწმება: 
 // დაწერეთ კოდი, რომელიც იღებს რიცხვს და ამოწმებს, არის თუ არა ის დადებითი, უარყოფითი ან ნული. შესაბამისად, დაბეჭდეთ "რიცხვი დადებითია", "რიცხვი უარყოფითია" ან "რიცხვი ნულია".
 
 
@@ -877,14 +881,14 @@
 //     console.log("wrong");    
 // }
 
-//   ( არ არის სავალდებულო)წლის ნაკიანობის შემოწმება: 
+// 5.  ( არ არის სავალდებულო)წლის ნაკიანობის შემოწმება: 
 // დაწერეთ კოდი, რომელიც იღებს წელს და ამოწმებს, არის თუ არა ის ნაკიანი. ნაკიანი წელია, რომელიც იყოფა 4-ზე, მაგრამ არ იყოფა 100-ზე, გარდა იმ შემთხვევისა, როცა ის იყოფა 400-ზე. თუ წელი ნაკიანია, დაბეჭდეთ "წელი ნაკიანია", წინააღმდეგ შემთხვევაში - "წელი არ არის ნაკიანი". 
 // && და ოპერატორია 2 ერთად აღებული, >= მეტია ან ტოლი, 
 
 
 
 
-// წელი & იყოფა 4-ზე ე.ი.  მაგრამ !== არ იყოფა 100-ზე, || გარდა იმ შემთხვევისა, რომელიციყოფა400-ზე ყეარ % 400 === 0)
+// წელი & იყოფა 4-ზე ე.ი.  მაგრამ !== არ იყოფა 100-ზე, || გარდა იმ შემთხვევისა, რომელიც იყოფა400-ზე ყეარ % 400 === 0)
 
 // let year = 2024
 // if((year % 4 === 0 && year % 100 !== 0) || year & 400 === 0){
@@ -902,77 +906,373 @@
 // }
 
 
-//   რიცხვის ციფრების რაოდენობის განსაზღვრა: 
+// 6.  რიცხვის ციფრების რაოდენობის განსაზღვრა: 
 // დაწერეთ კოდი, რომელიც იღებს რიცხვს და დაბეჭდავს შეტყობინებას, თუ რამდენი ციფრი აქვს მას. მაგალითად, თუ რიცხვი არის 123, დაბეჭდეთ "რიცხვს აქვს 3 ციფრი". 
 
+// string-ად გადავაქციოთ, რომ წაიკითხოს სიგრძე, სიგრძეს მხოლოდ მასივი და სტრინგი კითხულობს.
+// let number = 123456789;
+// let result = number.toString().length;
+// console.log(result);
 
-//   ( არ არის სავალდებულო)დღის ტიპის განსაზღვრა: 
+
+
+// 7.  ( არ არის სავალდებულო)დღის ტიპის განსაზღვრა: 
 // დაწერეთ კოდი, რომელიც იღებს კვირის დღის ნომერს (1-დან 7-მდე, სადაც 1 შეესაბამება ორშაბათს და 7 - კვირას) და დაბეჭდავს შეტყობინებას, არის თუ არა ეს დღე სამუშაო დღე თუ დასვენების დღე. 
+// let day = 2;
+// if(day % 7 === 0 || day % 7 === 6){
+//     console.log("დასვენების დღე");
+// }else{
+//     console.log("სამუშაო დღე");
+// }
+// let day = 6;
+// if(day % 7 === 0 || day % 7 === 6){
+//     console.log("დასვენების დღე");
+// }else{
+//     console.log("სამუშაო დღე");
+// }
+// let day = 8;
+// if(day % 7 === 0 || day % 7 === 6){
+//     console.log("დასვენების დღე");
+// }else{
+//     console.log("სამუშაო დღე");
+// }
+// let day = 3;
+// if(day % 7 >=1 &&  day <=5){
+//     console.log("სამუშაო დღე");
+// }else if (day === 6 || day === 7){
+//     console.log("დასვენების დღე");
+// }else {
+//     console.log("არ არის სწორად ჩაწერილი");    
+// }
 
+
+// let day = 8;
+// if(day % 7 >=1 &&  day <=5){
+//     console.log("სამუშაო დღე");
+// }else if (day === 6 || day === 7){
+//     console.log("დასვენების დღე");
+// }else {
+//     console.log("არ არის სწორად ჩაწერილი");    
+// }
+
+// let day = 6;
+// if(day % 7 >=1 &&  day <=5){
+//     console.log("სამუშაო დღე");
+// }else if (day === 6 || day === 7){
+//     console.log("დასვენების დღე");
+// }else {
+//     console.log("არ არის სწორად ჩაწერილი");    
+// }
+
+
+
+
+
+//   ახალი მასალა
+//   თერნერი ოპეერატორი
+
+
+// ნება დართული აქვს თუ არა 18 წლამდე მოსწავლეს, რომ მიიღოს თუ არა ალკოჰოლური სასმელი, თუ არა და დალიოს წყალი. 18 წელზე ნაკლებია დალიოს წყალი
+// თუ 18 წლის არის ან მეტის დალიოს ალკოჰოლი
+
+// let drink;
+
+
+// let age = 12;
+// if( age > 18){
+//     console.log("can drink wine");    
+// }else{
+//     console.log("can drink water");    
+// }
+
+
+// let age = 19;
+// if( age > 18){
+//     console.log("can drink wine");    
+// }else{
+//     console.log("can drink water");    
+// }
+
+
+// Ternary   ( if - ის შემოკლებული ვარიანტი იყო)
+// let age = 12;
+// let result = age > 18 ?  "wine" : "water"
+// console.log(result);
+
+
+// let age = 19;
+// let result = age > 18 ?  "wine" : "water"
+// console.log(result);
+ 
+// Ternary   ( for - ის შემოკლებული ვარიანტი იყო)
+// let number =[1,2,3,4,5]
+// for (let i=0; i <=5; i++){
+//     console.log(numberumber[i]);
+    
+// }
+
+// for (let i=0; i <=5; i++){
+//     console.log(i);    
+// }
+// let number =[1,2,3,4,5]
+// for( let num of number ){
+//     console.log(num);    
+// }
+// let number =[1,2,3,4,5]
+// for( let item of number ){
+//     console.log(item);    
+// }
+
+
+
+// ES 6 სტანდარტი
 
 
 // მე 7 ლექცია
 
-// let array = [2,4,6,8,34,23,45,66,88];
+// function declaration
 
-// for( let i=0; i < array.length; i++){
-//   if(array[i] % 2 == 1){
-//     console.log(array[i]);
-    
-//   }
+// ფუნქცია
+// ფუნქციას რაღაცა input-ს ვაწვდით, შემდეგ გადმოდის და მუშაობს algorithm-ის გამოყენებით და მიბრუნებს რაღაც შედეგს output.
+// მაგ: hello, world ----> say ----> hello, world ვიზუალურად გამოდის რაც მივაწოდე თავიდან ფუნქციას, ვთქვათ ინფორმაცია. მიიღო ინფორმაცია, გადავიდა ყუთში, გადაამუშავა და მივიღეთ პასუხი.
 
-// for(let item of array ){
-//    if(item  % 2 == 0){
-//     console.log(item);
+// function არის ქივორდი, რეზერვურებული სიტყვა, რადგან ფერი ლურჯი აქვს. ვარქმევთ სახელს,რომელსაც მე თავად ვირჩევ,  sum(რაც უნდა გადავცე იმას ვწერთ input){რაც უნდა შეასრულოს algorithm}
+// return ქივორდი და ნიშნავს დაბრუნებას
 
-//    }
-
+// function sum(a,b){
+//     return a+b
 // }
-
-// 10 .02
-
-
-// function declaration hoisted
-
-// greet("Teona");
-
-// function greet(fullname){
-//     console.log(`hello ${fullname}`);
-
-// }
-
-
-
-
-
-
-// function greet(fullname){
-//    return `hello ${fullname}`
-
-// }
-
-// let result = greet("Teona");
+// // ფუნქციამ რომ კიმუშაოს მე უნდა გამოვიძახო
+// let result = sum(198,52016);
 // console.log(result);
 
 
-// expression function     non hoisted
 
+// function sum(a,b){
+//   return a*b
+// }
+// // ფუნქციამ რომ კიმუშაოს მე უნდა გამოვიძახო
+// let result = sum(198,52016);
+// console.log(result);
+
+// function sum(a,b){
+//   return a-b
+// }
+// // ფუნქციამ რომ კიმუშაოს მე უნდა გამოვიძახო
+// let result = sum(89,52016);
+// console.log(result);
+
+// function sum(a,b){
+//   return a/b
+// }
+// // ფუნქციამ რომ კიმუშაოს მე უნდა გამოვიძახო
+// let result = sum(198,52016);
+// console.log(result);
+
+
+
+// შეგვიძლია რამდენიმე მოქმედება გავაერთიანოთ
+
+// არის ვრაპერივით
+
+
+// function sum(a,b,c,d){
+//   return (a/b)*(c/d)
+// }
+// // ფუნქციამ რომ კიმუშაოს მე უნდა გამოვიძახო
+// let result = sum(5,6,7,2);
+// console.log(result);
+
+// function sum(a,b){
+//   return a+b
+// }
+// // ფუნქციამ რომ კიმუშაოს მე უნდა გამოვიძახო
+// let result = sum(198,52016);
+// let result1 = sum(155,25)
+// let result2 = sum(28,94)
+// let result3 = sum(34,54)
+// console.log(result);
+// console.log(result1);
+// console.log(result2);
+// console.log(result3);
+
+
+// function sum(a,b){
+//   return a*b
+// }
+// // ფუნქციამ რომ კიმუშაოს მე უნდა გამოვიძახო
+// let result = sum(198,52016);
+// let result1 = sum(155,25)
+// let result2 = sum(28,94)
+// let result3 = sum(34,54)
+// console.log(result);
+// console.log(result1);
+// console.log(result2);
+// console.log(result3);
+
+
+// function calcday(day){    
+//     if(day % 7 >=1 &&  day <=5){
+//     console.log("სამუშაო დღე");
+// }else if (day === 6 || day === 7){
+//     console.log("დასვენების დღე");
+// }else {
+//     console.log("არ არის სწორად ჩაწერილი");    
+// }
+// }
+// calcday(6)
+// calcday(9)
+// calcday(4)
+// calcday(7)
+// კონსოლოგს არ ვიყენებთ, მხოლოდ დასაბეჭდათ გვჭირდება სხვა დანარჩენი დანიშნულება არ გააჩნია, მას რეალურ პროექტებში არ გამოვიყენებთ.  return-ვიყენებთ ფუნქციაში. calcday ცვლადი უნდა შევინახოთ, რადგან ის ახლა თუ გამოვიყენეთ მერე აღარ გამოჩნდება. 
+
+
+
+
+
+
+
+// 05.02.2025 (დავალება)
+
+// 3 თებერვლის ყველა დავალებაში სადაც  if/else  გამოიყენე თ , გადაწერეთ ternary oparator -ით.
+// ვურთავ ნიმუშს
+//  let result = age > 18 ? 'wine' : 'water'
+//   console.log(result);
+// ხოლო სადაც for ციკლი   დაწერეთ ES 6 სტანდარტით.
+ 
+// for( let item of number ){
+//    console.log(item);
+// }
+
+
+
+
+
+// 3.    რიცხვის ლუწი ან კენტი შემოწმება: 
+// დაწერეთ კოდი, რომელიც იღებს რიცხვს და ამოწმებს, არის თუ არა ის ლუწი თუ კენტი. თუ რიცხვი ლუწია, დაბეჭდეთ "რიცხვი ლუწია", ხოლო თუ კენტია - "რიცხვი კენტია". 
+
+// let array = [2,41,6,88,10,12,13,15,23,25,404,48,656,88,91,97,100,110,111,113,214,218,19];
+//   for(let item of array ){
+//       if(item % 2 == 0){
+//       console.log(item);
+    
+//       }
+// }
+//  სწორია
+
+// let array = [2,41,6,88,10,12,13,15,23,25,404,48,656,88,91,97,100,110,111,113,214,218,19];
+//   for(let item of array ){
+//       if(item % 2 == 1){
+//       console.log(item);
+    
+//       }
+// }
+//  სწორია
+// let array = [2,41,6,88,10,12,13,15,23,25,404,48,656,88,91,97,100,110,111,113,214,218,19];
+//   for(let item of array ){
+//       if(item % 5 == 4){
+//       console.log(item);
+    
+//       }
+// }
+//  სწორია
+// let array = [2,41,6,88,10,12,13,15,23,25,404,48,656,88,91,97,100,110,111,113,214,218,19];
+//   for(let item of array ){
+//       if(item % 7 == 1){
+//       console.log(item);
+    
+//       }
+// }
+//  სწორია
+
+
+// let array = [2,41,6,88,10,12,13,15,23,25,404,48,656,88,91,97,100,110,111,113,214,218,19];
+// for( let item of array){
+//     console.log(item);  
+// }
+// სწორია
+
+
+
+
+// 10.02.2025 ლექცია
+
+
+        //    გასარკვევია არ იბეჭდება
+
+
+
+// function greet(fullname){
+//     console.log("hello ${fullname}");    
+// }
+// const greetresult = greet("Nikolas");
+
+
+
+// function greet(fullname){
+//    return "hello ${fullname}"
+// }
+// let result = greet("Nikolas");
+// console.log(result);
 
 
 // const greet = function(fullname){
-//      return `hello ${fullname}`
+//     return "hello ${fullname}" 
+// }
+// let result = greet("Nikolas");
+// console.log(result);
 
+
+// arrow function
+
+// const greet = (fullname) => "hello ${fullname}"
+// let result = greet("Nikolas")
+// console.log(result);
+
+// ფუნქცია არ მუშაობს გამოძახების გარეშე
+
+
+// ჰოისტი--- ჰოისტდება ნიშნავს, რომ ძრავი კითხულობს, ინფორმაცია ააქვს ზევით და სანამ შევქმნით ფუნქცია და უკვე იცი ეს greet("Nikolas"); რა არის და გვიბეჭდავს. ზევით ატანას ნიშნვს.მნიშვნელობების ზემოთ ატანა.
+
+
+
+// greet("Nikolas");
+// function greet(fullname){
+//     console.log("hello ${fullname}");    
 // }
 
-// let result = greet("Teona");
+// function declaration ჰოისტდება
+// ✅ სრულად ჰოისტდება (შეგიძლიათ გამოიყენოთ მანამდე, სანამ გამოცხადდება) 
+// return გავწეროთ ხელით
+
+
+
+
+
+// let result = greet("Nikolas");
 // console.log(result);
+// const greet = function(fullname){
+//     return "hello  ${fullname}" 
+// }
+// let result = greet("Nikolas");
+// console.log(result);
+// const greet = function(fullname){
+//     return "hello ${fullname}" 
+// }
+// exspression function  ❌ ჰოისტდება, მაგრამ undefined მნიშვნელობით 
+// return გავწეროთ ხელით
 
+    
+// Arrow Function ❌ არ ჰოისტდება 
+// return => აქვს ერთხაზიან ჩანაწერში და ხელით არ ვწერთ
 
-// Arrow function
 
 // const greet = (fullname) => `hello ${fullname}`
-// let result = greet('Mari')
+// let result = greet('Nikolas and Toma')
 // console.log(result);
+
+
+
 
 
 //1. დაწერე ფუნქცია , რომელიც დააჯამებს მხოლოდ დადებით რიცხვებს
@@ -988,9 +1288,32 @@
 //    return result
 // }
 
-// let sumResult= sum(23,33,4,54,6,7,87,9,-2,-3,-5)
-// let sumResult2 = sum(2345,678,789,-2,-5)
+// let sumResult= sum(2,1,2,5,8,7,-4,-19,-78,-854,598,614.1,9,23,33,4,54,6,7,87,9,-2,-3,-5)
+// console.log(sumResult);
+
+// let sumResult2 = sum(2345,678,789,-2,-5,-1784)
 // console.log(sumResult2);
+
+
+// 1.1. დაწერე ფუნქცია , რომელიც დააჯამებს მხოლოდ უარყოფით რიცხვებს
+
+// function sum(...num){
+//     let result =0;
+//     for(let item of num){
+//         if(item < 0){
+//             result = result + item
+//         }
+//     }
+//    return result
+// }
+// let sumResult= sum(2,1,2,5,8,7,-4,-19,-78,-854,598,614.1,9,23,33,4,54,6,7,87,9,-2,-3,-5)
+// console.log(sumResult);
+
+// let sumResult2 = sum(2345,678,789,-2,-5,-1784)
+// console.log(sumResult2);
+
+
+
 
 
 // function lengthCount(...num){
@@ -1002,38 +1325,193 @@
 
 // console.log(sumResult);
 
-// function sum(...num){
-//     let result =[];
-//     for(let item of num){
-//         if(item > 0){
-//             result = result * item
 
-//         }
+
+// გადამრავლება
+
+/////////////// // function sum(...num){
+//     let result =0;
+//     for(let item of num){    
+//             result = result * item       
 //     }
 //    return result
 // }
 
 // let sumResult= sum(23,33,4,54,6,7,87,9,-2,-3,-5)
-// let sumResult2 = sum(2345,678,789,-2,-5)
+// let sumResult2 = sum(2345,678,789)
 // console.log(sumResult2);
+
+
+// სიგრძის დათვლა
+
+
+// function lengthCount(...num){
+//     return num.length
+// }
+// let sumResult = lengthCount(2,1,2,5,8,7,-4,-19,-78,-854,598,614.1,9,23,33,4,54,6,7,87,9,-2,-3,-5)
+// console.log(sumResult);
+
+// მასივი
 
 // let array3 =[2,3,4,5]
 // let resultNum = array3.map(num =>num * 8)
 // console.log(resultNum);
+ 
+
+
+// კვადრატში აყვანა
+
+
+// let array3 =[2,3,4,5]
+// let resultNum = array3.map(num =>num * num)
+// console.log(resultNum);
+// map ფუნქციაა
+
+
+
+
+// 12.05.2025   (10 თებერვლის დავალება)
+
+
 
 
 // 2.დაწერეთ ფუნქცია რომელიც დააბრუნებს სახელს და გვარს ობიექტიდან
+
+                        //  გასარკვევი   
+
 // const person = {
-    //     firstName: "David",
-    //     lastName: "Johnson",
-    //     ciry:"Batumi"
-    //   };
-// 3 დაწერეთ ფუნქცია რომელიც დააბრუნებს მაქსიმალურ რიცხვს
-// 4ფუნქცია უნდა მიიღებდეს ორი პარამეტრი (start და end), რომლებიც არის რიცხვები.
+//         firstName: "David",
+//         lastName: "Johnson",
+//         ciry:"Batumi"
+//         return person
+//       };
+//     let result = person("username","surname");
+//     console.log(result);
+    
+// 3. დაწერეთ ფუნქცია რომელიც დააბრუნებს მაქსიმალურ რიცხვს
+
+
+// პირველი ვარინტი
+
+// function maxNumber(...num){
+//     let max = 0;
+//     for(item of num){
+//         if(item > max){
+//             max = item
+//         }
+//     }
+//     return max
+// }
+// let result = maxNumber(2,1,22,5,8,7,-4,-19,-78,-854,598,614.1,9,23,33,4,54,6,7,87,9,-2,-3,-5)
+// console.log(result);
+
+
+
+// 3. დაწერეთ ფუნქცია რომელიც დააბრუნებს მინიმალურ რიცხვს
+
+
+// function maxNumber(...num){
+//     let min = 0;
+//     for(item of num){
+//         if(item < min){
+//             min = item
+//         }
+//     }
+//     return min
+// }
+// let result = maxNumber(2,1,22,5,8,7,-4,-19,-78,-854,598,614.1,9,23,33,4,54,6,7,87,9,-2,-3,-5)
+// console.log(result);
+
+       
+
+// 4. ფუნქცია უნდა მიიღებდეს ორი პარამეტრი (start და end), რომლებიც არის რიცხვები.
 // ფუნქციამ უნდა დააბრუნოს მასივი სადაც იქნება ამ რიცხვებს შორის არსებული ყველა რიცხვი მაგ ( თუ გადავცემ 3 და 9 , დააბრუნებს 3,4,5,6,7,8,9 -ს  )
-// 5
-// დაწერეთ ფუნქცია, რომელიც მიიღებს რამდენიმე სახელს და მათ ყველას მიესალმება.
+
+// function range(start, and){
+//     let rangeArray = []
+//     for(let i = 7; i<=19; i++){
+//   rangeArray.push(i)
+//     }
+//     return rangeArray
+// }
+// let result4 = range(2,19);
+// console.log(result4);
 
 
 
- 
+
+    // საწყისი და ბოლო რიცხვები
+
+
+// function range(start, and){
+//     let rangeArray = []
+//     for(let i =start; i<=and; i++){
+//         rangeArray.push(i)
+//     }
+//     return rangeArray
+// }
+// let result4 = range(2,145);
+// console.log(result4);
+
+
+
+
+// 5.  დაწერეთ ფუნქცია, რომელიც მიიღებს რამდენიმე სახელს და მათ ყველას მიესალმება.
+
+
+// function greet(...fullName){
+//     return"გამარჯობა ${ fullName}"
+
+// }
+// let result = greet("Nikolas","Thoma","Gigi","Elene","Demetre","Thekla")
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
+// function name1(...fullName){
+//     let result = 6;
+//     for( let item of fullName){
+//         if(item < 6){
+//             result = result + item
+//         }
+//     }
+//     return result
+// }
+// let name1result = name1("Nikolas","Thoma","Gigi","Elene","Demetre","Thekla")
+// console.log(name1result);
+
+// function sum(...num){
+//     let result =0;
+//     for(let item of num){
+//         if(item < 0){
+//             result = result + item
+//         }
+//     }
+//    return result
+// }
+// let sumResult= sum(2,1,2,5,8,7,-4,-19,-78,-854,598,614.1,9,23,33,4,54,6,7,87,9,-2,-3,-5)
+// console.log(sumResult);
+
+
+
+
+
+
+
+// let array3 =[2,3,4,5]
+// let resultNum = array3.map(num =>num * num)
+// console.log(resultNum);
+// map ფუნქციაა
+
+
+//  ცალკცალკე გადავუაროთ
+//  for ავიღოთ, რადგან მასივია, აითემოფ ფულლნეიმი  ან აიტემი
+
+
