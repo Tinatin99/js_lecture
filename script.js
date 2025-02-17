@@ -1474,18 +1474,50 @@
 
 
 
+// function range(start, and){
+//     let rangeArray = []
+//     for(let i = 7; i<=19; i++){
+//   rangeArray.push(i)
+//     }
+//     return rangeArray
+// }
+// let result4 = range(2,19);
+// console.log(result4);
 
 // function name1(...fullName){
-//     let result = 6;
+//     let array =["gamarjoba"];
 //     for( let item of fullName){
-//         if(item < 6){
-//             result = result + item
+//         if(item < array){
+//             array = array +  item
 //         }
 //     }
-//     return result
+//     return array
 // }
 // let name1result = name1("Nikolas","Thoma","Gigi","Elene","Demetre","Thekla")
 // console.log(name1result);
+
+
+
+// ვერ გავაკათე ბოლომდე
+
+
+// function name1(...fullName){
+//     let result =["gamarjoba"];
+//     for( let item of fullName){
+//         if(item > result){
+//           result=result+ item
+//         }
+//     }
+//     return fullName 
+// }
+// let result1 = name1("Nikolas","Thoma","Gigi","Elene","Demetre","Thekla")
+// console.log(result1);
+
+// function greet(...fullname){
+//       return `hello ${fullname}`
+// }
+// let result = greet("Nikolas","Thoma","Gigi","Elene","Demetre","Thekla");
+// console.log(result);
 
 // function sum(...num){
 //     let result =0;
@@ -1502,7 +1534,19 @@
 
 
 
+//  ცალკცალკე გადავუაროთ
+//  for ავიღოთ, რადგან მასივია, აითემოფ ფულლნეიმი  ან აიტემი
 
+
+
+// 12.02.2025 ლექცია
+
+// 1)   მასივის მეთოდები:  Map, filter, sort, reduce, foreach, every  [ერთი ლოგიკით მუშაობს ყველა, არ არის რთული]
+// 2)   globalThis, function / local [ ფუნქციისსკოპი და ლოკალურისკოპი ერთი და იგივეა] and block scopes
+// 3)   ობიექტისარგუმენტად მიწოდების პრაქტიკულ მაგალითს [ობიექტი რომ მივაწოდოთ არგუმენტად ფუნქციას, როგორ იმუშავებს და როგორშემიძლია ეს მონაცემები გამოვიყენო  დავამუშაო და მომხმარებელს გამოვუტანო]
+// 4)   function defoult parametr [ ფუნქციას აქვს დეფოლ პარამეტრები]
+
+            //  მასივის მეთოდები: map
 
 
 // let array3 =[2,3,4,5]
@@ -1511,7 +1555,147 @@
 // map ფუნქციაა
 
 
-//  ცალკცალკე გადავუაროთ
-//  for ავიღოთ, რადგან მასივია, აითემოფ ფულლნეიმი  ან აიტემი
+// let sum = [2,1,2,5,8,7,-4,-19,-78,-854,598,614.1,9,23,33,4,54,6,7,87,9,-2,-3,-5]
+// let sumResult = sum.map(num =>num * num)
+// console.log(sumResult);
 
 
+                //    filter
+
+// ვაწვდი პირობას, filter მრთოდმა უნდა გაფილტროს პირობის საფუძველზე და  დააბრუნოს ის რიცხვები, რომლებმაც ეს პირობა დააკმაყოფილა. ანუ იყოფა 2-ზე და არ გვაქვს ნაშთი.
+// let numbersArray = [2,33,44,55,66,77,8,9,7,35]
+// let result = numbersArray.filter(num => num % 2 === 0)
+// console.log(result);
+// map ფუნქციაა
+
+
+
+
+
+// ვაწვდი პირობას, filter მრთოდმა უნდა გაფილტროს პირობის საფუძველზე და  დააბრუნოს ის რიცხვები, რომლებმაც ეს პირობა დააკმაყოფილა. ანუ იყოფა 2-ზე და  გვაქვს ნაშთი 1.
+// let numbersArray = [2,33,44,55,66,77,8,9,7,35]
+// let result = numbersArray.filter(num => num % 2 === 1)
+// console.log(result);
+
+
+                //  sort
+
+//  let numbersArray = [2,33,44,55,66,77,8,9,7,35]
+//  let result = numbersArray.sort((a,b) => a-b)
+//  console.log(result);
+//  დაალაგა თანმიმდევრომის მიხედვით, ზრდადობის მიხედვით ალაგებს.
+
+
+//  let numbersArray = [2,33,44,55,66,77,8,9,7,35]
+//  let result = numbersArray.sort((a,b) => b-a)
+//  console.log(result);
+//  დაალაგა თანმიმდევრომის მიხედვით, კლებადობის მიხედვით ალაგებს.
+
+
+                // reduce
+//  reduce  მარტივად აჯამებს            
+//  let numbersArray = [2,33,44,55,66,77,8,9,7,35]
+//   let result = numbersArray.reduce((acumlator, current)=> acumlator + current,0)
+//   console.log(result);
+//  (0 -ს ნაცვლად შემძლია მასივი დავწერო და დავაბრუნო მასივში ,"სტრინგი" დავწერო და სიტყვები გავართიანო და მივიღო რაღაც წინადადება, იმის მიხედვით თუ რა ინფორმაცია მჭირდება განსხვავდება პარამეტრები.)
+
+
+
+
+
+
+                // forEach
+
+//   forEach არის for-ის მსგავსი, ის გადაუვლის მასივში არსებულ ყველა მონაცემს და დავაბეჭდინებთ  რასაც მივცემ პირობად. (ერთ პარამეტრს გავწერთ) , ხოლო { ლოგიკა ჩვენ უნდა გავწეროთ}. ანუ გადაუვლის და თან პირობას ასრულებს ერთად.  
+//   forEach უფრო ნელია არის, for უფრო სწრაფია. 
+//   მასივებზე ვიყენებთ მხ. ფორიჩს forEach-ის.
+
+//  let numbersArray = [2,33,44,55,66,77,8,9,7,35]
+//  let result = numbersArray.forEach(item => console.log(item))
+//  console.log(result);
+
+
+
+                //  every
+
+
+ // ვაწვდი პირობას, every მეთოდმა უნდა დააკმაყოფილოს  პირობა. რიცხვი  იყოფა 2-ზე და  გვაქვს ნაშთი 1.რადგან მოცემულ მასივში ყველა ლუწი რიცხვი არ გავქს,კენტრი რიცხვებიც არის მასივში, ამიტომ დაბეჭდავს false - მცდარია.
+
+//  let numbersArray = [2,33,44,55,66,77,8,9,7,35]
+//  let result = numbersArray.every(num => num % 2 === 1);
+//  console.log(result);
+
+
+//  ვაწვდი პირობას, every მეთოდმა უნდა დააკმაყოფილოს  პირობა. რიცხვი  იყოფა 2-ზე და  გვაქვს ნაშთი 0.რადგან მოცემულ მასივში ყველა ლუწი რიცხვი  გავქს და კენტი რიცხვები არ არის მასივში,  ამიტომ დაბეჭდავს true - ჭეშმარიტია.
+
+//  let numbersArray = [2,34,44,58,66,72,8,90,76,30]
+//  let result = numbersArray.every(num => num % 2 === 0);
+//  console.log(result);
+
+
+
+
+                    //    some
+
+ //  ვაწვდი პირობას, some მეთოდმა უნდა დააკმაყოფილოს  პირობა. რიცხვი  იყოფა 2-ზე და  გვაქვს ნაშთი 0 ან  რიცხვი  იყოფა 2-ზე და  გვაქვს ნაშთი 1.რადგან მოცემულ მასივში  ლუწი  და კენტი რიცხვები გვაქვს მასივში, თუნდაც ერთმა რიცხვმა დააკმაყოფილოს პირობა, მაინც ჭეშმარიტია- true-ს  დაბეჭდავს.
+
+//  let numbersArray = [2,34,44,58,66,7,8,95,7,30]
+//  let result = numbersArray.some(num => num % 2 === 0);
+//  console.log(result);
+
+
+                                     //  Global scope
+
+//  ეს არის ლოკალური scope,გარეთ შევქმენით რაღაც ცვლადი
+
+//  let message = "hello"
+//  console.log(message);
+
+// function greet(){
+// let message = "hello"
+//  console.log(message);
+// }
+// greet()
+
+// იისფერი ფრჩხილები არის ბლოკ სკოუფი{
+//     let message = "hello"
+//  console.log(message);
+// }ხოლო ყვითელი ფრჩხილი კი არის ლოკალური სკოუფი.{
+    //     if(true){
+    //         let message = "hello"
+    //      console.log(message);
+  //     }
+   // }
+
+
+// ფუნქციის გარეთ, რომ გასცდება არის გლობალური სკოუფი, გლობალური და ყველგან ხილული.
+
+// function greet(){
+//     if(true){
+//         let message = "hello"
+//      console.log(message);
+//     }
+// }
+//  greet()
+
+//როგორც კი ფიგურულ ფრჩხილებს გავცდებით  console.log(message); ვეღარ დაბეჭდავს, რადგან ვერ ხედავს. როცა ცვლად ვქმნი let da const - ით. 
+
+// function greet(){
+    //     if(true){
+    //         let message = "hello"
+    //      
+    //     }
+    // }
+    //  greet()
+    // console.log(message);
+    
+    // var მარტო ცვლადი 2016 წლიდან, გლობალურია. წაიკითხავს.
+    
+        if(true){
+            var message = "hello"         
+        }
+    console.log(message);  
+
+                                //  Function scope
+
+                                //  block scope(ES6)
