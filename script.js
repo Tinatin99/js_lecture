@@ -1792,19 +1792,53 @@
 // };
 
 
-const books = {
-    nameofbook:["Data_Tutashkhia","red and black", "Me, grandmother, Iliko, Hilarion", "guest_host"],    
-    price:29,
-    stock:72,
+
+// const books = {
+//     nameofbook:["Data_Tutashkhia","red and black", "Me, grandmother, Iliko, Hilarion", "guest_host"],    
+//     price:29,
+//     stock:72,
     
-        }
-        function nameofbook(komedi){
-           return "xelmisawvdomia"
-        }
+//         }
+//         function nameofbook(komedi){
+//            return "xelmisawvdomia"
+//         }
        
-let result = nameofbook(books)
-console.log(result);
+// let result = nameofbook(books)
+// console.log(result);
 
 
-ვცადე და არ გამომივიდა სამწუხაროდ
+
+
+// const books = {
+//     nameofbook:["Data_Tutashkhia","red and black", "Me, grandmother, Iliko, Hilarion", "guest_host"],    
+//     price:29,
+//     stock:72,    
+//         }
+//         function nameofbook(komedi){{       
+//           if(books.stock > 72)
+//              return "მარაგში საკმარისი რაოდენობა არ არის!"
+//             }
+// return books.price * 36;
+//   }
+//   let result = nameofbook(books)
+//   console.log(result);
+
+
+
+
+//   const books = {
+//     nameofbook:["Data_Tutashkhia","red and black", "Me, grandmother, Iliko, Hilarion", "guest_host"],    
+//     price:29,
+//     stock:72,    
+//         }
+//         function nameofbook(komedi){{       
+//           if(books.stock > 72)
+//              return "მარაგში საკმარისი რაოდენობა არ არის!"
+//             }
+// return books.price * 97;
+//   }
+//   let result = nameofbook(books)
+//   console.log(result);
+
+// ვცადე და არ გამომივიდა სამწუხაროდ
     
