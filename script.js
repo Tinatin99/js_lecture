@@ -220,7 +220,15 @@
 // let result2 = text.substring(0,4);
 // console.log(result2);
 
+
+
+
+
 // ობიექტი:
+
+
+
+
 
 // let data ={
     
@@ -924,18 +932,24 @@
 // }else{
 //     console.log("სამუშაო დღე");
 // }
+
+
 // let day = 6;
 // if(day % 7 === 0 || day % 7 === 6){
 //     console.log("დასვენების დღე");
 // }else{
 //     console.log("სამუშაო დღე");
 // }
+
+
 // let day = 8;
 // if(day % 7 === 0 || day % 7 === 6){
 //     console.log("დასვენების დღე");
 // }else{
 //     console.log("სამუშაო დღე");
 // }
+
+
 // let day = 3;
 // if(day % 7 >=1 &&  day <=5){
 //     console.log("სამუშაო დღე");
@@ -954,6 +968,7 @@
 // }else {
 //     console.log("არ არის სწორად ჩაწერილი");    
 // }
+
 
 // let day = 6;
 // if(day % 7 >=1 &&  day <=5){
@@ -1691,11 +1706,134 @@
     
     // var მარტო ცვლადი 2016 წლიდან, გლობალურია. წაიკითხავს.
     
-        if(true){
-            var message = "hello"         
-        }
-    console.log(message);  
+    //     if(true){
+    //         var message = "hello"         
+    //     }
+    // console.log(message);  
 
                                 //  Function scope
 
-                                //  block scope(ES6)
+//                                 //  block scope(ES6)
+//  1.დაწერეთ ფუნქცია რომელიც დააბრუნებს სახელს და გვარს ობიექტიდან
+// მთლიანი ობიექტი უნდა გადავცე ფუნქციას, ამ ობიექტიდან მხოლოდ სახელი და გვარი უნდა დავაბრუნო. გამოვიძახებთ fullname-ს და გადავცემ არგუმენტს. არგუმენტი არის პერსონი-person მთლიანი ინფორმაცია მასში მოთავსებული.My fullName is -ეს არის სტატიკურად გაწერილი ინფორმაცია, ხოლო ${person1.firstName} ${person1.lastName}`
+// არის დინამიურად გაწერილი ინფორმაცია.
+// ფუნქციისშეცვლა არ დაგვჭირდება, მაშინაც კი თუ ინფორმაციებს შევცვლით, უბრალოდ person1-ში შემოვა გადაწერილი ინფორმაცია ახალი ობიექტის შემოტანის შემთხვევაში.ფუნქციაში აუცილებლად უნდა დავწეროთ პარამეტრის სახელი
+// ფუნქციაში აუცილებლად პარამეტრის სახელი ფიგურირებს და არა ჩვენს მიერ მიწვდილი ობიექტის სახელი.
+
+// const person = {
+//         firstName: "Nikolas-Sinan",
+//         lastName: "Amanathidi",
+//         ciry:"Batumi"
+//       };
+
+//     function fullName(person1){
+//         return `My fullName is ${person1.firstName} ${person1.lastName}`
+
+//     }
+//     let result =fullName(person)
+//     console.log(result);
+
+
+
+// return აჩერებს ფუნქციის მუშაობას, მის შემდეგ არცერთი კოდი და ინფორმაცია არ იმუშავებს.
+
+
+
+//  დავალება #2
+
+// შექმენით ობიექტი, რომელიც ინახავს მაისურის მონაცემებს:
+
+// აღწერა (description)
+// ფერი (color)
+// ზომა (size)
+// ფასი (price)
+// რაოდენობა (quantity)
+// შემდეგ შექმენით ფუნქცია, რომელიც მიიღებს ამ ობიექტს და მომხმარებლის მიერ შეძენილი მაისურების რაოდენობას.
+
+
+
+// თუ მომხმარებელი ითხოვს საწყობში არსებულზე მეტ რაოდენობას, უნდა დაბრუნდეს ტექსტი: "მარაგში საკმარისი რაოდენობა არ არის!"
+// წინააღმდეგ შემთხვევაში, ფუნქციამ უნდა დააბრუნოს მაისურების ჯამური ფასი.
+
+const product = {
+    description: ["Men's_shirts", "Women's_T_shirts", "Children's _T_shirts", "Summer_shirts"],
+    color: ["yellow", "red", "green", "blue", "black","brown", "white"],
+    size: [22,24,26,28,30,32,34,36,38,40,42,44,46,48,50],
+    price: 65,
+    quantity: 1000,
+}
+         function declaration(quantity){
+         if(product.quantity > 1050)
+         return "მარაგში საკმარისი რაოდენობა არ არის!"
+        }
+
+  return product.price * 100;    
+   
+   let result =description(product)
+   console.log(result);
+
+   ბევრი ვეცდე მაგრა არ გამომივიდა
+
+
+
+// let book = {
+//     nameofbook:["Data_Tutashkhia","witer_Chabua_Amirejibi","Thbilisi"],    
+//     price:75,
+//     inStock:true,
+//     array:['novel',"detective","Romanticism","Comedy"],
+//     Object: {               
+//                witer1: "Konstantine_Gamsakhurdia",
+//                witer2: "Vaja_Fshavela",
+//                witer3: "Nodar_Dumbadze",
+//           }   
+//    }
+//     book.price=52;
+//     book.inStock =false;
+//     book.Object.witer2 ="Grigol_Abashidze";
+//     console.log(book.price);
+//     console.log(book.inStock);
+//     console.log(book.Object.witer2);
+
+
+//   შექმენი ობიექტი, რომელიც აღწერს თეატრის ბილეთს. 
+// სტრიქონი (string): ბილეთის ნომერი, თეატრის სახელი, შოუ.
+// რიცხვი (number): ბილეთის ფასი. 
+// ბულიანი (boolean): თუ ბილეთი ხელმისაწვდომია. ყავისფერით
+// ობიექტი (object): თეატრის მისამართი. 
+// თარიღი (Date): ბილეთის შეძენის თარიღი. 
+//   შეცვალეთ ბილეთის ფასი და ხელმისაწვდომობა (isAvailable). 
+//   დააბეჭდეთ კონსოლში თქვენი შექმნილი ობიექტი. 
+
+// let ticket = {
+//     nameofTheatre:"marjaniSvili",
+//     NumberofTicket:29,
+//     inStock:true,
+//     dataofTheatre:18,
+//     price:45,
+// }
+// ticket.price =20;
+// ticket.inStock =false;
+// console.log(ticket.price);
+// console.log(ticket.inStock);
+
+// // 3.დავალების პირობა:
+//  შექმენით მაღაზიის ობიექტი (გლობალური scope-ში), რომელიც შეიცავს პროდუქტის მონაცემებს (სახელი, ფასი, რაოდენობა საწყობში).
+//  შექმენით ფუნქცია (function scope), რომელიც მიიღებს მომხმარებლის შეკვეთას და დააბრუნებს ჯამურ ღირებულებას.
+//  გამოიყენეთ ბლოკის scope if პირობაში, რათა გამოიანგარიშოთ ფასდაკლება შეკვეთაზე (მაგალითად, 3-ზე მეტი პროდუქტის შეძენისას 10% ფასდაკლება).
+// დაბეჭდეთ საბოლოო თანხა ეკრანზე.
+
+//  გლობალური scope - პროდუქტის მონაცემები
+// const product = {
+//     name: "მაისური",
+//     price: 20,
+//     stock: 10
+// };
+
+
+    //ფუნქციის scope - შეკვეთის გამოთვლა
+   
+
+    // ბლოკის scope - ფასდაკლების ლოგიკა
+  
+
+    // მომხმარებლის შეკვეთა
