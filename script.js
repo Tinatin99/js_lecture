@@ -1663,6 +1663,7 @@
 
 //  ეს არის ლოკალური scope,გარეთ შევქმენით რაღაც ცვლადი
 
+
 //  let message = "hello"
 //  console.log(message);
 
@@ -1755,66 +1756,27 @@
 // თუ მომხმარებელი ითხოვს საწყობში არსებულზე მეტ რაოდენობას, უნდა დაბრუნდეს ტექსტი: "მარაგში საკმარისი რაოდენობა არ არის!"
 // წინააღმდეგ შემთხვევაში, ფუნქციამ უნდა დააბრუნოს მაისურების ჯამური ფასი.
 
-const product = {
-    description: ["Men's_shirts", "Women's_T_shirts", "Children's _T_shirts", "Summer_shirts"],
-    color: ["yellow", "red", "green", "blue", "black","brown", "white"],
-    size: [22,24,26,28,30,32,34,36,38,40,42,44,46,48,50],
-    price: 65,
-    quantity: 1000,
-}
-         function declaration(quantity){
-         if(product.quantity > 1050)
-         return "მარაგში საკმარისი რაოდენობა არ არის!"
-        }
-
-  return product.price * 100;    
-   
-   let result =description(product)
-   console.log(result);
-
-   ბევრი ვეცდე მაგრა არ გამომივიდა
-
-
-
-// let book = {
-//     nameofbook:["Data_Tutashkhia","witer_Chabua_Amirejibi","Thbilisi"],    
-//     price:75,
-//     inStock:true,
-//     array:['novel',"detective","Romanticism","Comedy"],
-//     Object: {               
-//                witer1: "Konstantine_Gamsakhurdia",
-//                witer2: "Vaja_Fshavela",
-//                witer3: "Nodar_Dumbadze",
-//           }   
-//    }
-//     book.price=52;
-//     book.inStock =false;
-//     book.Object.witer2 ="Grigol_Abashidze";
-//     console.log(book.price);
-//     console.log(book.inStock);
-//     console.log(book.Object.witer2);
-
-
-//   შექმენი ობიექტი, რომელიც აღწერს თეატრის ბილეთს. 
-// სტრიქონი (string): ბილეთის ნომერი, თეატრის სახელი, შოუ.
-// რიცხვი (number): ბილეთის ფასი. 
-// ბულიანი (boolean): თუ ბილეთი ხელმისაწვდომია. ყავისფერით
-// ობიექტი (object): თეატრის მისამართი. 
-// თარიღი (Date): ბილეთის შეძენის თარიღი. 
-//   შეცვალეთ ბილეთის ფასი და ხელმისაწვდომობა (isAvailable). 
-//   დააბეჭდეთ კონსოლში თქვენი შექმნილი ობიექტი. 
-
-// let ticket = {
-//     nameofTheatre:"marjaniSvili",
-//     NumberofTicket:29,
-//     inStock:true,
-//     dataofTheatre:18,
-//     price:45,
+// const product = {
+//     description: ["Men's_shirts", "Women's_T_shirts", "Children's _T_shirts", "Summer_shirts"],
+//     color: ["yellow", "red", "green", "blue", "black","brown", "white"],
+//     size: [22,24,26,28,30,32,34,36,38,40,42,44,46,48,50],
+//     price: 65,
+//     quantity: 1000,
 // }
-// ticket.price =20;
-// ticket.inStock =false;
-// console.log(ticket.price);
-// console.log(ticket.inStock);
+//          function declaration(quantity){
+//          if(product.quantity > 1050)
+//          return "მარაგში საკმარისი რაოდენობა არ არის!"
+//         }
+
+//   return product.price * 100;    
+   
+//    let result =description(product)
+//    console.log(result);
+
+//    ბევრი ვეცდე მაგრა არ გამომივიდა
+
+
+
 
 // // 3.დავალების პირობა:
 //  შექმენით მაღაზიის ობიექტი (გლობალური scope-ში), რომელიც შეიცავს პროდუქტის მონაცემებს (სახელი, ფასი, რაოდენობა საწყობში).
@@ -1830,10 +1792,19 @@ const product = {
 // };
 
 
-    //ფუნქციის scope - შეკვეთის გამოთვლა
-   
+const books = {
+    nameofbook:["Data_Tutashkhia","red and black", "Me, grandmother, Iliko, Hilarion", "guest_host"],    
+    price:29,
+    stock:72,
+    
+        }
+        function nameofbook(komedi){
+           return "xelmisawvdomia"
+        }
+       
+let result = nameofbook(books)
+console.log(result);
 
-    // ბლოკის scope - ფასდაკლების ლოგიკა
-  
 
-    // მომხმარებლის შეკვეთა
+ვცადე და არ გამომივიდა სამწუხაროდ
+    
