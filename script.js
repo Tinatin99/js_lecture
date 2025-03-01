@@ -1728,7 +1728,7 @@
 //       };
 
 //     function fullName(person1){
-//         return `My fullName is ${person1.firstName} ${person1.lastName}`
+//         return `My fullName is ${person1.firstName} ${person1.lastName} i am live in ${person1.ciry}`
 
 //     }
 //     let result =fullName(person)
@@ -1756,28 +1756,127 @@
 // თუ მომხმარებელი ითხოვს საწყობში არსებულზე მეტ რაოდენობას, უნდა დაბრუნდეს ტექსტი: "მარაგში საკმარისი რაოდენობა არ არის!"
 // წინააღმდეგ შემთხვევაში, ფუნქციამ უნდა დააბრუნოს მაისურების ჯამური ფასი.
 
-// const product = {
+
+
+
+
+
+
+// დასასრულებელია
+
+
+
+
+// const tshirt = {
 //     description: ["Men's_shirts", "Women's_T_shirts", "Children's _T_shirts", "Summer_shirts"],
-//     color: ["yellow", "red", "green", "blue", "black","brown", "white"],
-//     size: [22,24,26,28,30,32,34,36,38,40,42,44,46,48,50],
+//     color: "yellow", "red", "green", "blue", "black","brown", "white",
+//     size: 22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,
 //     price: 65,
 //     quantity: 1000,
 // }
-//          function declaration(quantity){
-//          if(product.quantity > 1050)
+//          function shirtboy(tshirt,quantity){
+//          if(quantity > tshirt.quantity)
 //          return "მარაგში საკმარისი რაოდენობა არ არის!"
-//         }
+//         }else{
+//             let totaAamount = tshirt.price * quantity
+//             return "გადასახდელი თანხა არის ${totalAmount}ლ"
+//         } 
+    
+//   let result = shirtboy(tshirt,1001),
+//   console.log(result);
+  
 
-//   return product.price * 100;    
+
+
+
+
+
+
+
+
+
+
+// ლექცია 19,02,2025 ლექცია
+
+
+
+
+
+// 1.საფინალო პროექტის შეფასების რუბრიკის განხილვა
+// 2.HTML CSS კითხვები
+// 3.landing page
+
+// 4.დავალების განხილვა
+// 4.1.შექმენით ობიექტი, რომელიც ინახავს მაისურის მონაცემებს:
+ 
+// აღწერა (description)
+// ფერი (color)
+// ზომა (size)
+// ფასი (price)
+// რაოდენობა (quantity)
+// შემდეგ შექმენით ფუნქცია, რომელიც მიიღებს ამ ობიექტს და მომხმარებლის მიერ შეძენილი მაისურების რაოდენობას.
+ 
+// თუ მომხმარებელი ითხოვს საწყობში არსებულზე მეტ რაოდენობას, უნდა დაბრუნდეს ტექსტი: "მარაგში საკმარისი რაოდენობა არ არის!"
+// წინააღმდეგ შემთხვევაში, ფუნქციამ უნდა დააბრუნოს მაისურების ჯამური ფასი.
+
+
+
+//   const tshirt = {
+//     description: "მაღალი ხარისხის ბამბის მაისური",
+//     color: "შავი",
+//     size: "L",
+//     price: 25, //ერთეულის ფსი
+//     quantity: 100,  //საწყობში არსებული რაოდენობა
+// }
+// function shirtBuy(tshirt,quantity){
+//     if(quantity > tshirt.quantity){
+//         return "მარაგში საკმარისი რაოდენობა არ არის!"
+//     }else{
+//         let totalAmount = tshirt.price * quantity
+
+//         return `გადასახდელი თანხა არის ${totalAmount}ლ`
+
+//     }
+// }
+// let result = shirtBuy(tshirt,89)
+// console.log(result);
+
+
+// const tshirt = {
+//     description: "მაღალი ხარისხის ბამბის მაისური",
+//     color: "შავი",
+//     size: "L",
+//     price: 25, //ერთეულის ფსი
+//     quantity: 100,  //საწყობში არსებული რაოდენობა
+// }
+// function shirtBuy(tshirt,quantity){
+//     if(quantity > tshirt.quantity){
+//         return "მარაგში საკმარისი რაოდენობა არ არის!"
+//     }else{
+//         let totalAmount = tshirt.price * quantity
+
+//         return `გადასახდელი თანხა არის ${totalAmount}ლ`
+
+//     }
+// }
+// let result = shirtBuy(tshirt,123)
+// console.log(result);
+
+
+// ფუნქცია ამოწმებს მაარაგს და ანგარიშობს ჯამურ ფასს.
+
+
+
+
+
+
+
+
    
-//    let result =description(product)
-//    console.log(result);
-
-//    ბევრი ვეცდე მაგრა არ გამომივიდა
 
 
 
-
+// 4.2.დავალების პირობა:
 // // 3.დავალების პირობა:
 //  შექმენით მაღაზიის ობიექტი (გლობალური scope-ში), რომელიც შეიცავს პროდუქტის მონაცემებს (სახელი, ფასი, რაოდენობა საწყობში).
 //  შექმენით ფუნქცია (function scope), რომელიც მიიღებს მომხმარებლის შეკვეთას და დააბრუნებს ჯამურ ღირებულებას.
@@ -1791,6 +1890,32 @@
 //     stock: 10
 // };
 
+// სწორია
+
+// const product = {
+//     name: "მაისური",
+//     price: 20,
+//     stock: 10,
+//     }
+//     function order(quantity){ 
+//         let totalPrice = product.price * quantity
+//         if(quantity > 3){
+//             let discount = totalPrice * 0.1
+//             totalPrice = totalPrice - discount
+//            console.log(discount);       
+//         }
+//     return ` გადასახდელი თანხა ${totalPrice}`
+
+// }
+//     let number1 = Number(prompt("დაწერეთ რაოდენობა"))
+//     let result1 = order(number1)
+// //    let result1 = order(7)
+//    console.log(result1);
+   
+
+
+
+
 
 
 // const books = {
@@ -1799,6 +1924,7 @@
 //     stock:72,
     
 //         }
+        
 //         function nameofbook(komedi){
 //            return "xelmisawvdomia"
 //         }
@@ -1809,13 +1935,15 @@
 
 
 
+
+
 // const books = {
 //     nameofbook:["Data_Tutashkhia","red and black", "Me, grandmother, Iliko, Hilarion", "guest_host"],    
 //     price:29,
 //     stock:72,    
 //         }
-//         function nameofbook(komedi){{       
-//           if(books.stock > 72)
+//         function nameofbook(komedi){      
+//           if(books.stock > 72){
 //              return "მარაგში საკმარისი რაოდენობა არ არის!"
 //             }
 // return books.price * 36;
@@ -1826,13 +1954,17 @@
 
 
 
-//   const books = {
+
+// სწორია
+
+// const books = {
 //     nameofbook:["Data_Tutashkhia","red and black", "Me, grandmother, Iliko, Hilarion", "guest_host"],    
 //     price:29,
 //     stock:72,    
 //         }
-//         function nameofbook(komedi){{       
-//           if(books.stock > 72)
+
+//         function nameofbook(komedi){      
+//           if(books.stock > 72){
 //              return "მარაგში საკმარისი რაოდენობა არ არის!"
 //             }
 // return books.price * 97;
@@ -1840,5 +1972,468 @@
 //   let result = nameofbook(books)
 //   console.log(result);
 
-// ვცადე და არ გამომივიდა სამწუხაროდ
+
     
+    // ბლოკის scope - ფასდაკლების ლოგიკა
+
+
+
+
+
+
+    
+//5. DOM - Document Object Model (WEB API -ის ნაწილი)
+// API -Application Programming Interface-API-ის მეშვეობით პროგრამული მოდულები ან სისტემები ერთმანეთთან "ლაპარაკობენ" და ინფორმაციის გაცვლას ახდენენ.
+
+// let divContainer = document.getElementById('container')
+// divContainer.textContent ='Goodbye'
+
+// let divContainer = document.getElementById('container')
+// let divContainerClass =document.getElementsByClassName('container')
+// let containerDiv = document.getElementsByTagName('div')
+
+
+// let divContainer1 = document.querySelector('.text')
+// let divContainer1 = document.querySelectorAll('.text')
+// divContainer1 =[div, div, div]
+// let divContainer1 = document.querySelectorAll('.text')[0]
+// let divContainer1 = document.querySelectorAll('.text')[1]
+// let divContainer1 = document.querySelectorAll('.text')[2]
+// let divContainer1 = document.querySelectorAll('.text')[3]
+// let divContainer1 = document.querySelectorAll('.text')[4]
+// let divContainer12 = document.querySelectorAll('.text').forEach(function(item){
+//     item.textContent = " farewell"
+// })
+
+// let divContainer12 = document.querySelectorAll('.text').forEach(function(item){
+//     item.textContent = " wellcome"
+// })
+
+
+
+// divContainer.textContent ='Goodbye'
+
+// 5.1.Element Selection Methods - როგორ მივწვდეთ ელემენტებს HTML -ში
+
+// 5.2.Element Manipulation Methods- კლასის , ატრიბუტის , კონტენტის მინიჭება ,გადაწერა,წაშლა,ფერის დამატება
+
+// 5.3. Element Creation and Insertion Methods- ელემენტის შექმნა, ჩასმა
+
+// 5.4 . Event Handling (ივენტების დამუშავება)
+// •	addEventListener(event, function)
+
+// 6. body -ს მიანიჭეთ ფერი , შემოიტანეთ ღილაკი, მასზე დაკლიკებით შეუცვალეთ ფერი, ხოლო შემდეგ გამოიყენეთ toggle .ღილაკზე დაკლიკებით ვამატებთ კლასის სახელს.
+// 7. შექმენით ჰედერი, შემოიტანეთ ლოგო, ნავიგაცია და ბურგერ მენიუს აიქონი,ნოუთბუქის რეზოლუციაზე ბურგერ მენიუ არ უნდა ჩანდეს ,ტაბლეტის რეზოლუციაზე უნდა გამოჩნდეს ბურგერ მენიუს აიქონი და  მასზე დაკლიკებისას კი ნავიგაცია.
+
+
+
+
+
+
+
+
+
+
+
+
+
+// / 24 თებერვლის ლექცია 
+ 
+// 1. script.js ფაილის დაკავშირების მეთოდები
+
+// 2.გლობალური ობიექტი -- window
+
+
+
+
+
+// object არის ობიექტი, მაგ. კონტეინერი(ქი ველიუს პრინციპით ), რომელშიც ვინახავთ ნებისმიერი პროდუქტის თვისებებს(propertis) და მეთოდებს(methods).
+// თვისებებში ზედსართავ სახელებს ჩამოვწერთ. მაგ. რა ფერია? რამარკაა? და ა. შ.logმეთოდებში ანუ ფუნქციებში ჩამოვწერ როგორი არის მისი ფუნქციები, შეიძება ეს იყოს როგორი სიგნალი აქვს? როგორი მართვადია? 
+
+
+// console.log(window);
+
+// window.alert("გაფრთხილება");
+
+// window.confirm("ნამდვილად მსურს ყიდვა?")
+
+// 3. window -ს მეთოდები იგივე ფუნქციებია.ობიექტსი არსებულ ფუნქციას მეთოდს ვეძახით.( alert, confirm, propmt) მხოლოდ ამ სამ მეთოდს ვისწავლით, რომლებიც ჩაშენებულია თვითონწინდოუ ობიექტში.
+
+
+
+
+
+// 4. window -ს თვისებები(document, location,console, navigator,history???)
+
+// console.log(window.document);
+// ამოიღო indexedDB.html დოკუმენტი, რაც გავაკეთეთ და ჩავწერეთ თუნდაც კომენტარსი, ყველაფერი გადმოიტანა და დააკონსოლოგა.ე.ი. მთლიანად საიტის სტრუქტურა, ჰედი, ბოდი მეინი თუ ფუთერი ყველაფერს რაც კი რამ გაწერილი გვექნება, ამოიღებს და გადმოიტანს მთლიან დოკუმენტს კომენტარების ჩათვლით და დააკონსოლოგებს.
+
+
+// window რადგან გლობალურია, მისი დაწერა აღარ არის საჭირო, მხოლოდ დოკუმეტი რომ ჩავწეროთ მაინც იგივე გადმოიტანს. ელემენტების დასელექტების დროს პირდაპირ დოკუმენტით დავიწყებთ. ვინდოუსის დაწერა არ არის აუცილებელი თუმცა რომ დავწეროთ არც შეცდომა იქნება.
+// დოკუმენტი არის რასაც indexe.html-ში რასაც გავწერთ.
+
+
+// DOM არის დამაკავშირეველი java script-ის და ბრაუზერის.
+// index.html - თითოეული ელემენტი ობიექტებად იქცევა, ეს ელემენტები nodes- ნოუდები ჰქვია. დომი არის დამაკავშირებელი. როგორც კი indexe.html-ი ჩაიტვირთება, გადაიქცევა დომად და შემდეგ java script-ის მეშვეობით ხდება დოკუმენტში ცვლილებების გაკეთება, ინფორმაციის გადაწერა.
+
+
+
+// /5.DOM - Document Object Model (WEB API -ის ნაწილი) და არ არის java script-ის ნაწილი.
+
+
+
+// ეი პი აი -API  არის დამაკავშირებელი, შამავალი front-სა და back-ს შორის.front-დან მოთხოვნას ვაგზავნით და API-ის მიაქვს  back-დან უკან გვიბრუნებს ჩვენ რასაც ვეუბნებით.
+
+
+
+// API -Application Programming Interface-API-ის მეშვეობით პროგრამული მოდულები ან სისტემები ერთმანეთთან "ლაპარაკობენ" და ინფორმაციის გაცვლას ახდენენ.
+
+// 5.1.Element Selection Methods - როგორ მივწვდეთ ელემენტებს HTML -ში
+
+// let divContainer = document.getElementById('container')
+// divContainer.textContent ='welcome1'
+
+// let divContainerClass =document.getElementsByClassName('container')
+// let containerDiv = document.getElementsByTagName('div')
+
+
+
+
+// let ქივორდი, ცვლადი
+// let divContainer1 = document.querySelector('.text')
+// let divContainer1 = document.querySelector('#text')
+// let divContainer12 = document.querySelectorAll('.text').forEach(function(item){
+//     item.textContent = " farewell"
+// })
+// როცა ერთზე მეტი მაქვს კლასი, აუცილებლად მასი იქნება, ნებისმიერი მასივის მეთოდი გამოვიყენოთ. 
+
+
+
+
+
+// 5.2.Element Manipulation Methods- კლასის , ატრიბუტის , კონტენტის მინიჭება ,გადაწერა,წაშლა,ფერის დამატება
+                                
+
+
+
+// let text =document.getElementById('text')
+// text.innerHTML='<p>hello text</p>'
+
+
+// ტეგი და ტექსტი მთლიანად ერთად არის ელემენტი. კარგი ვარიანტი 
+// //   <!-- <script src="script.js" defer></script>სწრაფია -->
+// // <!-- <script src="script.js"></script> ნელია -->
+// დასაკავშირებლად  თანამედროვე ბრაუზერებში და პროექტებში.
+
+
+
+
+
+
+// text.innerText = 'Hello innerText'
+// text.setAttribute('class','extraClass')
+
+
+// კლასის დამატება, კლასის მნიშვნელოვა ველიუ არის 'extraClass'
+
+
+// text.classList.add('secondClass')
+
+
+// კლასის დამატება მეორე ნაირად, ხშირად გამოვიყენებთ, ბურგერ მენიუს შემთხვევაში.ბურგერზე დაკლიკებით   სანავიგაციო მენიუ  გამოვაჩინოთ.
+// ~ნებისმიერ ელემენტს დავამატებ კლასის სახელს და შევუცვლი ფუნქციას
+
+
+// text.style.color = 'red'
+// სტილის მინიჭება.
+
+// ელემენტების მანიპულაციის მეთოდები.
+
+
+
+
+// 5.3. Element Creation and Insertion Methods- ელემენტის შექმნა, ჩასმა
+
+// // index.html-ში თუ არ მიწერია და მინდა დინამიურად შევქმნა და დავამატო
+
+
+// let ulElement = document.createElement('ul')
+// // createElement  ვქმნით
+// let liElement = document.createElement('li')
+
+// ulElement.appendChild(liElement)
+// // ცაეფენდე ანუ ჩასვი ულში ლი, ე.ი. ul-S ში li ჩასვი.
+// text.appendChild(ulElement)
+// // appendChild   ვსვამთ
+
+
+
+// // 6 რა არის Event
+// // let button = document.getElementById('button')
+// // let bodyId = document.getElementById('color')
+// // button.addEventListener('click',function(){
+// //     bodyId.classList.toggle('active')
+// // })
+
+
+// // 6.1. Event Handling (ივენთების დამუშავება)('click', 'focus', 'keydown')
+
+// // 7. body -ს მიანიჭეთ ფერი , შემოიტანეთ ღილაკი, მასზე დაკლიკებით შეუცვალეთ ფერი, ხოლო შემდეგ გამოიყენეთ toggle .ღილაკზე დაკლიკებით ვამატებთ კლასის სახელს.
+
+// // 8. შექმენით ჰედერი, შემოიტანეთ ლოგო, ნავიგაცია და ბურგერ მენიუს აიქონი,ნოუთბუქის რეზოლუციაზე ბურგერ მენიუ არ უნდა ჩანდეს ,ტაბლეტის რეზოლუციაზე უნდა გამოჩნდეს ბურგერ მენიუს აიქონი და  მასზე დაკლიკებისას კი ნავიგაცია.
+
+// // ვასელექთებ ბურგერაიქონს,ნავიგაციას
+// // let navigation = document.getElementById('navigation')
+// // let burger = document.getElementById('burger')
+// // // აიქონზე დაკლიკებისას 
+// // burger.addEventListener('click',function(){
+// //     if(navigation.classList.contains('activeNavigation')){
+// //         navigation.classList.remove('activeNavigation')
+// //         burger.innerHTML =' <i class="fa-solid fa-bars"></i>'
+
+// //     }else{
+// //         navigation.classList.add('activeNavigation')
+// //         burger.innerHTML= '<i class="fas fa-times"></i>'
+
+// //     }
+// // })
+// // თუ ნავიგაციის კლასი არის  activeNavigation მაშინ მოაშორეთ ეს კლასის სახელი და ბურგერაიქონს innerHTML ით დაუმატეთ fa-bars, წინააღმდეგ შემთხვევაში ნავიგაციას დაუმატეთ კლასის სახელი activeNavigation და burgerIcon innerHtLM fa-times
+
+
+
+
+// function showError(error)
+// {
+//  switch(error.code)
+// {
+//  case error.PERMISSION_DENIED:
+//  es.innerHTML="მომხმარებელის მიერ ადგილმდებარეობა ვერ განისაზღვრა
+// ადგილმდებარეობა."
+//  break;
+//  case error.POSITION_UNAVAILABLE:
+//  es.innerHTML = "ვერ დადგინდა ლოკაცის ადგილი "
+//  break;
+// 304
+//  case error.TIMEOUT:
+//  es.innerHTML = "ლოკაცის ადგილმდებაორების დადგენის დრო
+// გავიდა"
+//  break;
+//  case error.UNKNOWN_ERROR:
+//  es.innerHTML = "დაუდგენელი შეცდომა."
+//  break;
+//  }
+// }
+
+
+var es = document.getElementById("test");
+function getLocation()
+{
+ if (navigator.geolocation)
+{
+ navigator.geolocation.getCurrentPosition(showPosition, showError);
+ }
+else
+{
+ es.innerHTML = "Geolocation is not supported by this browser.";
+ }
+}
+function showPosition(position)
+{
+ var latlon = position.coords.latitude + "," + position.coords.longitude;
+ var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+ +latlon+"&zoom=14&size=500x600&sensor=false&key=AIzaSyBu916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+ document.getElementById("ruka").innerHTML = "<img src='"+img_url+"'>";
+}
+
+
+// 26.02.2025  leqture
+
+
+
+// 24* თებერვლის ლექცია 
+ 
+// 1. script.js ფაილის დაკავშირების მეთოდები defer ატრიბუტი
+
+// 2.გლობალური ობიექტი -- window
+
+// 3. window -ს მეთოდები ( alert, confirm, propmt)
+// 4. window -ს თვისებები(document, location,console, navigator,history???)
+
+// 5.DOM - Document Object Model (WEB API -ის ნაწილი)
+// API -Application Programming Interface-API-ის მეშვეობით პროგრამული მოდულები ან სისტემები ერთმანეთთან "ლაპარაკობენ" და ინფორმაციის გაცვლას ახდენენ.
+
+// 5.1.Element Selection Methods - როგორ მივწვდეთ ელემენტებს HTML -ში
+
+// 5.2.Element Manipulation Methods- კლასის , ატრიბუტის , კონტენტის მინიჭება ,გადაწერა,წაშლა,ფერის დამატება
+
+// 5.3. Element Creation and Insertion Methods- ელემენტის შექმნა, ჩასმა
+
+
+
+// 26 თებერვალი
+
+// 1 რა არის Event
+// 1.1 event.target , which property
+// let button = document.getElementById('button')
+// button.addEventListener('click',function(event){
+//     console.log(event);
+    // })
+
+
+// 1.2 Event Handling (ივენთების დამუშავება)('click', 'focus', 'keydown')
+
+//1.3 input- ში  ჩაწერის დროს შეუცვალეთ უკანაფონის ფერი 
+// let input = document.getElementById('input')
+// input.addEventListener('keydown',function(){
+//     input.style.backgroundColor = 'pink'
+// })
+
+// 1.4. input ში ჩაწერილი სიტყვა რომ დაემატოს სიაში <ul> ში
+
+// ვასელექთებ button, input, ul -ს
+// button ზე დაკლიკებისას ..........
+// 1.ვინახავ input ის მნიშვნელობას value -ში
+// ვქმნი li -s, ვანიჭებ textContent -ს,(ვქმნი delete button -ს,ვანიჭებ კონტენტს,,delete ზე დაკლიკებისას ვშლი remove()-ით.
+//  li ში ვაეფენდებ delete Button ს)
+//  ul -ში ვაეფენდებ li -ს
+//  input value -ს ვასუფთავებ
+
+
+
+// 2.  რა არის this, რა განსხვავებაა window და this შორის 
+// console.log(this);
+
+// function showThis() {
+//     console.log(this);
+//   }
+//   showThis();
+
+
+// const userName = {
+//     name: "David",
+//     greet: function() {
+//       console.log(this.name);
+//     }
+//   };
+//   userName.greet();
+
+// 3. როგორ წამოვიღოთ სერვერიდან ინფორმაცია, როგორ გავაკეთოთ ასინქრონული ოპერაცია
+//3.1 როგორ მუშაობს AJAX(Asynchronous JavaScript and XML) 
+// 3.2სინქრონული და ასინქრონული კოდი
+// console.log(" დავალება 1");
+// console.log(" დავალება 2");
+// console.log(" დავალება 3");
+
+
+// console.log("დავალება 1");
+
+// setTimeout(() => {
+//   console.log("დავალება 2 ");
+// }, 5000);
+
+// console.log("დავალება 3");
+
+// როგორ განვახორციელოთ AJAX Request ?
+// 3.3 XMLHttpRequest()
+function getUsers(){
+    let request = new XMLHttpRequest()
+    request.addEventListener('load',render)
+    request.addEventListener('error',errorRender)
+
+    request.open('GET','https://reqres.in/api/users?page=1')
+    request.send()
+
+}
+
+function render(){
+    let response=this.response
+    let responseData = JSON.parse(response)
+    console.log(responseData);
+    let container = document.getElementById('container')
+    let ul = document.createElement('ul')
+    responseData.data.forEach(function(item){
+        let li = document.createElement('li')
+        li.textContent =item.email
+        let image = document.createElement('img')
+        image.src = item.avatar
+        ul.appendChild(li)
+        ul.appendChild(image)
+        container.appendChild(ul)
+
+    })
+
+  
+
+    
+   
+
+    
+}
+
+function errorRender(){
+    let container = document.getElementById('container')
+    let p = document.createElement('p')
+    p.textContent = 'server error'
+    container.appendChild(p)
+
+}
+
+getUsers()
+
+
+// 3.4 fetch()
+3. HTML ელემენტზე და js -ში  onClick() ის გამოყენება
+
+// let input =document.getElementById('inputEl')
+// let button = document.getElementById('change')
+// let ul = document.getElementById('ulEl')
+// button.addEventListener('click' , function(){
+//     let value = input.value;
+    
+//     let li = document.createElement('li')
+//     li.textContent = value
+//     let deleteButton = document.createElement('button')
+//     deleteButton.textContent = 'delete'
+//     deleteButton.addEventListener('click',function(){
+//         li.remove()
+
+//     })
+//     li.appendChild(deleteButton)
+  
+//     ul.appendChild(li)
+//     input.value = " "
+// })
+
+
+
+
+
+
+
+    
+    
+// let burger =document.getElementById('burger')
+// let navigation = document.getElementById('navigation')
+// burger.addEventListener('click', function(){
+//     if(navigation.classList.contains('activeNavigation')){
+//         navigation.classList.remove('activeNavigation')
+//         burger.innerHTML = '<i class="fa-solid fa-bars"></i>'
+
+//     }else{
+//          navigation.classList.add('activeNavigation')
+//         burger.innerHTML = '<i class="fas fa-times"></i>'
+
+//     }
+// })
+
+
+
+
+
+// let site = document.getElementById('site')
+// site.addEventListener('click', function(event){
+//     event.preventDefault()
+//     console.log('google is clicked');
+    
+// })
+// 2. preventDefault() გამოყენება ,როდესაც <a></a> -ს ვაკლიკებ, default action რომ არ მოხდეს.
