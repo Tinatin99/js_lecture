@@ -2168,17 +2168,52 @@
 
 
 
-// // 6 რა არის Event
-// // let button = document.getElementById('button')
-// // let bodyId = document.getElementById('color')
-// // button.addEventListener('click',function(){
-// //     bodyId.classList.toggle('active')
-// // })
+// // 6 რა არის Event              
+
+
+
+
+
+// body გავუწერთ class
+
+
+
+
+// click - event დაკლიკება, მოვლენა, რაღაცას რომ ვაკეთებ, ზმნა
+// class დამატება ფუნქციაში ხდება classList.add('secondClass')-ით
+
+
+// let button = document.getElementById('button')
+// button.addEventListener('click',function(){
+//     alert("gilocavt") 
+// })
+
+
+
+// let button = document.getElementById('button')
+// let bodyId = document.getElementById('color')
+// button.addEventListener('click',function(){
+//     bodyId.classList.add("active")    //ცვლის ფერს მხოლოდ ერთხელ 
+
+
+
+//     bodyId.classList.toggle('active')   // ცვლის ფერს  ყოველთვის
+
+//     bodyId.classList.remove('active')    //წაშლა
+// })
+
+
 
 
 // // 6.1. Event Handling (ივენთების დამუშავება)('click', 'focus', 'keydown')
 
 // // 7. body -ს მიანიჭეთ ფერი , შემოიტანეთ ღილაკი, მასზე დაკლიკებით შეუცვალეთ ფერი, ხოლო შემდეგ გამოიყენეთ toggle .ღილაკზე დაკლიკებით ვამატებთ კლასის სახელს.
+
+
+
+
+
+
 
 // // 8. შექმენით ჰედერი, შემოიტანეთ ლოგო, ნავიგაცია და ბურგერ მენიუს აიქონი,ნოუთბუქის რეზოლუციაზე ბურგერ მენიუ არ უნდა ჩანდეს ,ტაბლეტის რეზოლუციაზე უნდა გამოჩნდეს ბურგერ მენიუს აიქონი და  მასზე დაკლიკებისას კი ნავიგაცია.
 
@@ -2225,25 +2260,25 @@
 // }
 
 
-var es = document.getElementById("test");
-function getLocation()
-{
- if (navigator.geolocation)
-{
- navigator.geolocation.getCurrentPosition(showPosition, showError);
- }
-else
-{
- es.innerHTML = "Geolocation is not supported by this browser.";
- }
-}
-function showPosition(position)
-{
- var latlon = position.coords.latitude + "," + position.coords.longitude;
- var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
- +latlon+"&zoom=14&size=500x600&sensor=false&key=AIzaSyBu916DdpKAjTmJNIgngS6HL_kDIKU0aU";
- document.getElementById("ruka").innerHTML = "<img src='"+img_url+"'>";
-}
+// var es = document.getElementById("test");
+// function getLocation()
+// {
+//  if (navigator.geolocation)
+// {
+//  navigator.geolocation.getCurrentPosition(showPosition, showError);
+//  }
+// else
+// {
+//  es.innerHTML = "Geolocation is not supported by this browser.";
+//  }
+// }
+// function showPosition(position)
+// {
+//  var latlon = position.coords.latitude + "," + position.coords.longitude;
+//  var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+//  +latlon+"&zoom=14&size=500x600&sensor=false&key=AIzaSyBu916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+//  document.getElementById("ruka").innerHTML = "<img src='"+img_url+"'>";
+// }
 
 
 // 26.02.2025  leqture
@@ -2280,87 +2315,87 @@ function showPosition(position)
     // })
 
 
-// 1.2 Event Handling (ივენთების დამუშავება)('click', 'focus', 'keydown')
+// // 1.2 Event Handling (ივენთების დამუშავება)('click', 'focus', 'keydown')
 
-//1.3 input- ში  ჩაწერის დროს შეუცვალეთ უკანაფონის ფერი 
-// let input = document.getElementById('input')
-// input.addEventListener('keydown',function(){
-//     input.style.backgroundColor = 'pink'
-// })
+// //1.3 input- ში  ჩაწერის დროს შეუცვალეთ უკანაფონის ფერი 
+// // let input = document.getElementById('input')
+// // input.addEventListener('keydown',function(){
+// //     input.style.backgroundColor = 'pink'
+// // })
 
-// 1.4. input ში ჩაწერილი სიტყვა რომ დაემატოს სიაში <ul> ში
+// // 1.4. input ში ჩაწერილი სიტყვა რომ დაემატოს სიაში <ul> ში
 
-// ვასელექთებ button, input, ul -ს
-// button ზე დაკლიკებისას ..........
-// 1.ვინახავ input ის მნიშვნელობას value -ში
-// ვქმნი li -s, ვანიჭებ textContent -ს,(ვქმნი delete button -ს,ვანიჭებ კონტენტს,,delete ზე დაკლიკებისას ვშლი remove()-ით.
-//  li ში ვაეფენდებ delete Button ს)
-//  ul -ში ვაეფენდებ li -ს
-//  input value -ს ვასუფთავებ
-
-
-
-// 2.  რა არის this, რა განსხვავებაა window და this შორის 
-// console.log(this);
-
-// function showThis() {
-//     console.log(this);
-//   }
-//   showThis();
+// // ვასელექთებ button, input, ul -ს
+// // button ზე დაკლიკებისას ..........
+// // 1.ვინახავ input ის მნიშვნელობას value -ში
+// // ვქმნი li -s, ვანიჭებ textContent -ს,(ვქმნი delete button -ს,ვანიჭებ კონტენტს,,delete ზე დაკლიკებისას ვშლი remove()-ით.
+// //  li ში ვაეფენდებ delete Button ს)
+// //  ul -ში ვაეფენდებ li -ს
+// //  input value -ს ვასუფთავებ
 
 
-// const userName = {
-//     name: "David",
-//     greet: function() {
-//       console.log(this.name);
-//     }
-//   };
-//   userName.greet();
 
-// 3. როგორ წამოვიღოთ სერვერიდან ინფორმაცია, როგორ გავაკეთოთ ასინქრონული ოპერაცია
-//3.1 როგორ მუშაობს AJAX(Asynchronous JavaScript and XML) 
-// 3.2სინქრონული და ასინქრონული კოდი
-// console.log(" დავალება 1");
-// console.log(" დავალება 2");
-// console.log(" დავალება 3");
+// // 2.  რა არის this, რა განსხვავებაა window და this შორის 
+// // console.log(this);
+
+// // function showThis() {
+// //     console.log(this);
+// //   }
+// //   showThis();
 
 
-// console.log("დავალება 1");
+// // const userName = {
+// //     name: "David",
+// //     greet: function() {
+// //       console.log(this.name);
+// //     }
+// //   };
+// //   userName.greet();
 
-// setTimeout(() => {
-//   console.log("დავალება 2 ");
-// }, 5000);
+// // 3. როგორ წამოვიღოთ სერვერიდან ინფორმაცია, როგორ გავაკეთოთ ასინქრონული ოპერაცია
+// //3.1 როგორ მუშაობს AJAX(Asynchronous JavaScript and XML) 
+// // 3.2სინქრონული და ასინქრონული კოდი
+// // console.log(" დავალება 1");
+// // console.log(" დავალება 2");
+// // console.log(" დავალება 3");
 
-// console.log("დავალება 3");
 
-// როგორ განვახორციელოთ AJAX Request ?
-// 3.3 XMLHttpRequest()
-function getUsers(){
-    let request = new XMLHttpRequest()
-    request.addEventListener('load',render)
-    request.addEventListener('error',errorRender)
+// // console.log("დავალება 1");
 
-    request.open('GET','https://reqres.in/api/users?page=1')
-    request.send()
+// // setTimeout(() => {
+// //   console.log("დავალება 2 ");
+// // }, 5000);
 
-}
+// // console.log("დავალება 3");
 
-function render(){
-    let response=this.response
-    let responseData = JSON.parse(response)
-    console.log(responseData);
-    let container = document.getElementById('container')
-    let ul = document.createElement('ul')
-    responseData.data.forEach(function(item){
-        let li = document.createElement('li')
-        li.textContent =item.email
-        let image = document.createElement('img')
-        image.src = item.avatar
-        ul.appendChild(li)
-        ul.appendChild(image)
-        container.appendChild(ul)
+// // როგორ განვახორციელოთ AJAX Request ?
+// // 3.3 XMLHttpRequest()
+// function getUsers(){
+//     let request = new XMLHttpRequest()
+//     request.addEventListener('load',render)
+//     request.addEventListener('error',errorRender)
 
-    })
+//     request.open('GET','https://reqres.in/api/users?page=1')
+//     request.send()
+
+// }
+
+// function render(){
+//     let response=this.response
+//     let responseData = JSON.parse(response)
+//     console.log(responseData);
+//     let container = document.getElementById('container')
+//     let ul = document.createElement('ul')
+//     responseData.data.forEach(function(item){
+//         let li = document.createElement('li')
+//         li.textContent =item.email
+//         let image = document.createElement('img')
+//         image.src = item.avatar
+//         ul.appendChild(li)
+//         ul.appendChild(image)
+//         container.appendChild(ul)
+
+//     })
 
   
 
@@ -2368,23 +2403,23 @@ function render(){
    
 
     
-}
+// }
 
-function errorRender(){
-    let container = document.getElementById('container')
-    let p = document.createElement('p')
-    p.textContent = 'server error'
-    container.appendChild(p)
+// function errorRender(){
+//     let container = document.getElementById('container')
+//     let p = document.createElement('p')
+//     p.textContent = 'server error'
+//     container.appendChild(p)
 
-}
+// }
 
-getUsers()
+// getUsers()
 
 
 // 3.4 fetch()
-3. HTML ელემენტზე და js -ში  onClick() ის გამოყენება
+// 3. HTML ელემენტზე და js -ში  onClick() ის გამოყენება
 
-// let input =document.getElementById('inputEl')
+// // let input =document.getElementById('inputEl')
 // let button = document.getElementById('change')
 // let ul = document.getElementById('ulEl')
 // button.addEventListener('click' , function(){
@@ -2437,3 +2472,48 @@ getUsers()
     
 // })
 // 2. preventDefault() გამოყენება ,როდესაც <a></a> -ს ვაკლიკებ, default action რომ არ მოხდეს.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 05,03,2025     ლექცია
+
+// აკორდეონი და სლაიდერი
+
+
+
+
+
+
+
